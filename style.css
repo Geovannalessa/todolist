@@ -12,16 +12,18 @@ body {
 	display: flex;
 	justify-content: center;
 	height: 100%;
-	background-color: #6a1b9a;
+	background-color: #000000f6;
 	color: #FFF;
-	font-family: 'Roboto',sans-serif;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 
 main {
-	background-color: #9c4dcc;
-	padding: 20px;
-	width: 400px;;
+	background: radial-gradient(rgba(37, 36, 36, 0),rgba(0, 0, 255, 0.096),#300f4599 );
+	padding: 30px;
+	width: 700px;;
+	border-radius: 20px;
+	border: 1px double rgba(197, 197, 194, 0.065);
 }
 
 form{
@@ -35,13 +37,19 @@ form input {
 	font-size: 1rem;
 	padding: 5px;
 	align-items: stretch;
+	background-color: rgba(0, 0, 0, 0.026);
+	border: 1px solid rgba(255, 252, 252, 0.259);
+	color: white;
+	font-size: 15px;
 }
 
 form button {
 	width:100px;
 	display: block;
 	font-size: .7rem;
-	border: none;
+	border: 1px solid rgb(44, 62, 126);
+	background-color: transparent;
+	color: rgb(198, 197, 201);
 }
 
 #task-list{
@@ -50,7 +58,7 @@ form button {
 }
 
 #task-list li {
-	border-bottom: 1px solid rgba(255,255,255,.3);
+	border-bottom: 2px dotted rgba(81, 100, 141, 0.3);
 	padding: 10px 0;
 	display: flex;
 }
@@ -66,6 +74,7 @@ form button {
 
 #task-list li input:checked + label{
 	text-decoration: line-through;
+	color: rgba(126, 112, 115, 0.545);
 }
 
 #task-list li label{
